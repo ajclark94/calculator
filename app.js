@@ -46,7 +46,11 @@ class Calculator {
                 computation = prev * current;
                 break;
             case '÷':
+                if (current == 0) {
+                    computation = "Stop That!"
+                } else {
                 computation = prev / current;
+                }
                 break;
             default:
                 return;
